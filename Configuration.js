@@ -20,9 +20,6 @@ function getEndpoints(deviceAddress, endpoints)
   // todos los endpoints incluidos en el dispositivo automáticamente cuando se 
   // crea el dispositivo.
 
-  // En el código siguiente, se crean dos endpoints. El primero es un sensor de 
-  // temperatura, mientras que el segundo es un sensor de dióxido de carbono.
-
      endpoints.addEndpoint("1", "Gas sensor", endpointType.iasSensor, iasEndpointSubType.gasSensor);
      endpoints.addEndpoint("2", "CO2 sensor", endpointType.ppmConcentrationSensor, ppmConcentrationSensorSubType.carbonDioxide);
 }
